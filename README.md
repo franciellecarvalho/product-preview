@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Product Preview Card Component] [https://franciellecarvalho.com/challenges/product-preview-card-component/]
+- Live Site URL: [Product Preview Card Component] [https://franciellecarvalho.github.io/product-preview-card-component/]
 
 ### Built with
 
