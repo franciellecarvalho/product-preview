@@ -115,14 +115,23 @@ body {
   line-height: 1;
   color: var(--clr-03);
 }
-.product-price {
+.price {
+  display: flex;
+  align-items: center;
+}
+.product-sale-price {
   font-family: var(--ff-suppl);
   font-size: 2.25rem;
   color: var(--clr-01);
 }
-.price {
-  display: flex;
-  align-items: center;
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
 }
 .product-original-price {
   color: var(--clr-04);
