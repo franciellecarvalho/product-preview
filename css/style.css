@@ -89,39 +89,42 @@ body {
   color: var(--clr-04);
   display: grid;
   place-content: center;
+  margin: 1rem;
 }
 .product {
-  width: 640px;
+  max-width:25rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   background: var(--clr-05);
   font-family: var(--ff-base);
   align-items: center;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   overflow: hidden;
 }
 .product-descrition {
   display: grid;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 .product-category {
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 0.25rem;
 }
 .product-title {
   font-family: var(--ff-suppl);
-  font-size: 2.25rem;
+  font-size: 2em;
   line-height: 1;
   color: var(--clr-03);
 }
 .price {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .product-sale-price {
   font-family: var(--ff-suppl);
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: var(--clr-01);
 }
 .visually-hidden:not(:focus):not(:active) {
@@ -135,17 +138,18 @@ body {
 }
 .product-original-price {
   color: var(--clr-04);
-  margin: 0px 30px;
 }
 .product-add {
   display: block;
   background: var(--clr-01);
   color: var(--clr-05);
-  padding: 18px 0px;
-  border-radius: 8px;
-  border: 0px;
+  padding: 1.125rem 0rem;
+  border-radius: 0.5rem;
+  border: 0;
   text-align: center;
   cursor: pointer;
+  font-size: 0.925rem;
+  font-weight: 700;
 }
 .product-add:hover,
 :focus {
@@ -154,46 +158,18 @@ body {
 .product-add::before {
   content: "";
   display: inline-block;
-  width: 15px;
-  height: 16px;
-  margin: 0px 16px;
+  width: 1rem;
+  height: 1rem;
+  margin: 0rem 0.5rem;
   background-image: url("../images/icon-cart.svg");
 }
-/* Responsive */
-@media (max-width: 700px) {
-  .product-area {
-    height: auto;
-  }
+/* Desktop */
+@media (min-width: 37.5em) {
   .product {
-    width: 370px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 37.5rem;
   }
-  .product-descrition {
-    padding: 1rem;
-  }
-}
-@media (max-width: 499px) {
-  .product {
-    width: 300px;
-  }
-  .product-descrition {
-    gap: 0.8rem;
-  }
-  .product-title {
-    font-size: 1.75rem;
-  }
-}
-@media (max-width: 280px) {
-  .product {
-    width: 270px;
-  }
-  .product-descrition {
-    padding: 0.5rem;
-  }
-  .product-title {
-    font-size: 1.75rem;
-  }
-  .price {
-    display: grid;
+  .product-descrition{
+    padding: 2rem;
   }
 }
